@@ -1,0 +1,11 @@
+#!/bin/bash
+if [ $# -gt 0 ]
+then
+    ARGS=$@
+fi
+
+if [ -n $DISPLAY ]
+then
+	ARGS="-n $ARGS"
+fi
+emacsclient -a emacs ${ARGS}
