@@ -112,41 +112,40 @@
 (global-set-key (kbd "C-<home>") 'back-to-indentation-or-beginning)
 (global-set-key (kbd "C-<end>") 'end-of-line)
 
-(global-set-key (kbd "C-x C-k") 'kill-line)
-
-(global-set-key (kbd "C-h") 'back-to-indentation-or-beginning)
-(global-set-key (kbd "C-;") 'end-of-line)
-(global-set-key (kbd "M-h") 'back-to-indentation-or-beginning)
-(global-set-key (kbd "M-;") 'end-of-line)
+;; (global-set-key (kbd "C-x C-k") 'kill-line)
+;; (global-set-key (kbd "C-h") 'back-to-indentation-or-beginning)
+;; (global-set-key (kbd "C-;") 'end-of-line)
+;; (global-set-key (kbd "M-h") 'back-to-indentation-or-beginning)
+;; (global-set-key (kbd "M-;") 'end-of-line)
 (global-set-key (kbd "<kp-subtract>") 'cool-comment)
-;(global-set-key (kbd "C-v") 'delete-region-and-yank)
-;(global-set-key (kbd "C-y") 'delete-region-and-yank)
+;; (global-set-key (kbd "C-v") 'delete-region-and-yank)
+;; (global-set-key (kbd "C-y") 'delete-region-and-yank)
 
 (global-set-key (kbd "C-x C-<up>") 'windmove-up)
 (global-set-key (kbd "C-x C-<down>") 'windmove-down)
 (global-set-key (kbd "C-x C-<right>") 'windmove-right)
 (global-set-key (kbd "C-x C-<left>") 'windmove-left)
 
-(global-set-key (kbd "C-j") 'backward-char) 
-(global-set-key (kbd "C-l") 'forward-char)
-(global-set-key (kbd "C-k") 'next-line)
-(global-set-key (kbd "C-p") 'previous-line)
+;; (global-set-key (kbd "C-j") 'backward-char) 
+;; (global-set-key (kbd "C-l") 'forward-char)
+;; (global-set-key (kbd "C-k") 'next-line)
+;; (global-set-key (kbd "C-p") 'previous-line)
 
-(global-set-key (kbd "M-j") 'backward-word)
-(global-set-key (kbd "M-l") 'forward-word)
-(global-set-key (kbd "M-k") 'next-line)
-(global-set-key (kbd "M-p") 'previous-line)
+;; (global-set-key (kbd "M-j") 'backward-word)
+;; (global-set-key (kbd "M-l") 'forward-word)
+;; (global-set-key (kbd "M-k") 'next-line)
+;; (global-set-key (kbd "M-p") 'previous-line)
 
-(global-set-key (kbd "M-u") 'backward-kill-word)
+;; (global-set-key (kbd "M-u") 'backward-kill-word)
 (global-set-key (kbd "M-<backspace>") 'backward-kill-word)
-(global-set-key (kbd "C-u") 'backspace-unindent)
-(global-set-key (kbd "M-o") 'kill-word)
-(global-set-key (kbd "C-o") 'delete-char)
-(global-set-key (kbd "<delete>") 'delete-char)
+;; (global-set-key (kbd "C-u") 'backspace-unindent)
+;; (global-set-key (kbd "M-o") 'kill-word)
+;; (global-set-key (kbd "C-o") 'delete-char)
+;; (global-set-key (kbd "<delete>") 'delete-char)
 
-(global-set-key (kbd "C-M-f") 'replace-string)
-(global-set-key (kbd "C-f") 'isearch-forward)
-(global-set-key (kbd "M-f") 'isearch-backward)
+;; (global-set-key (kbd "C-M-f") 'replace-string)
+;; (global-set-key (kbd "C-f") 'isearch-forward)
+;; (global-set-key (kbd "M-f") 'isearch-backward)
 
 (global-set-key (kbd "<f2>") 'previous-buffer)
 (global-set-key (kbd "<f3>") 'next-buffer)
@@ -156,13 +155,13 @@
 (global-set-key (kbd "M-<f3>") 'load-workgroups)
 
 
-(global-set-key (kbd "M-i") 'previous-line)
+;; (global-set-key (kbd "M-i") 'previous-line)
 ;; differentiate tab from C-i
-(setq local-function-key-map (delq '(kp-tab . [9]) function-key-map))
+;; (setq local-function-key-map (delq '(kp-tab . [9]) function-key-map))
 ;; Translate the problematic key to the function key Hyper:
-(keyboard-translate ?\C-i ?\H-i)
+;; (keyboard-translate ?\C-i ?\H-i)
 ;; Rebind accordingly
-(global-set-key [?\H-i] 'previous-line)
+;; (global-set-key [?\H-i] 'previous-line)
 ;; still broken for ssh
 
 

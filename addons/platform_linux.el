@@ -19,6 +19,6 @@
 ; (toggle-fullscreen)
 (if (eq window-system 'X) (window-maximize))
     
-(load "/usr/share/emacs/site-lisp/site-gentoo.d/50gentoo-syntax-gentoo.el")
-; (add-to-list 'load-path "/usr/share/emacs/site-lisp/")
-; (require 'site-gentoo)
+;; (load "/usr/share/emacs/site-lisp/site-gentoo.d/50gentoo-syntax-gentoo.el")
+;; (add-to-list 'load-path "/usr/share/emacs/site-lisp/")
+;; (require 'site-gentoo)
